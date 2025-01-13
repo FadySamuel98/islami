@@ -4,6 +4,7 @@ class MyTheme {
   // color   light mode     dark mode
 
   static Color blackColor = Color(0xff242424);
+  static Color whiteColor = Color(0xffffffff);
   static Color primaryLightColor = Color(0xffB7935F);
   static ThemeData lightMode = ThemeData(
       canvasColor: primaryLightColor,
@@ -15,5 +16,7 @@ class MyTheme {
           selectedItemColor: blackColor, showUnselectedLabels: true),
       textTheme: TextTheme(
           titleLarge: TextStyle(
-              fontSize: 30, fontWeight: FontWeight.w700, color: blackColor)));
+              fontSize: 30, fontWeight: FontWeight.w700, color: blackColor),
+          bodyMedium: TextStyle(
+              fontSize: 25, fontWeight: FontWeight.w400, color: Colors.black)));
 }
